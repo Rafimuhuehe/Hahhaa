@@ -1,0 +1,80 @@
+for notification = 1, 1 do
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+	Title = "Notification";
+
+	Text = "Hi";
+
+	Icon = "rbxthumb://type=Asset&id=11862586975&w=150&h=150"})
+
+Duration = 16;
+
+wait(0.2)
+
+end
+
+for notification = 1, 1 do
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+	Title = "Notification";
+
+	Text = "Subscribe Madara Sricpter";
+
+	Icon = "rbxthumb://type=Asset&id=11862586975&w=150&h=150"})
+
+Duration = 16;
+
+wait(0.2)
+
+end
+
+for notification = 1, 1 do
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+
+	Title = "Notification";
+
+	Text = "Thx because you use this script";
+
+	Icon = "rbxthumb://type=Asset&id=11862586975&w=150&h=150"})
+
+Duration = 16;
+
+wait(0.2)
+
+end
+_G.HeadSize = 20
+
+_G.Disabled = true
+
+game:GetService('RunService').RenderStepped:connect(function()
+
+if _G.Disabled then
+
+for i,v in next, game:GetService('Players'):GetPlayers() do
+
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+
+pcall(function()
+
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+
+v.Character.HumanoidRootPart.Transparency = 0.7
+
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+
+v.Character.HumanoidRootPart.Material = "Neon"
+
+v.Character.HumanoidRootPart.CanCollide = false
+
+end)
+
+end
+
+end
+
+end
+
+end
